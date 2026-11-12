@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ndicapi-sim"
+version = "0.1.0"
+description = "Lightweight synthetic ndicapy data for offline tracker development"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+lint = ["pylint>=3"]
+
+[tool.setuptools.packages.find]
+include = ["ndicapi_sim*"]
